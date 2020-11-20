@@ -6,7 +6,7 @@ if(isset($_POST)) {
 	
 	$nombre = $_POST['datos_registrar_nombre'];
 	$email = $_POST['datos_registrar_email'];
-	$password= password_hash($_POST['datos_registrar_password'],PASSWORD_DEFAULT);
+	$password= md5(crc32(sha1($_POST['datos_registrar_password'])));
 
 	$sql = "INSERT INTO ohana.usuarios ( nombre, email, pass) VALUES ( '$nombre', '$email', '$password');";
 
