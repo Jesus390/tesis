@@ -18,7 +18,7 @@
         <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
 
         <!-- Template CSS -->
-        <link rel="stylesheet" href="assets/css/style-starter.css">
+        <link rel="stylesheet" href="/assets/css/style-starter.css">
   </head>
 
     <body>
