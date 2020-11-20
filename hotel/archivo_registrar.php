@@ -1,23 +1,22 @@
 <?php
 //se establece una conexion a la base de datos
-include 'conexion.php';
-//si se han enviado datos
+if(isset($_POST)) {
+	include 'conexion.php';
+	//si se han enviado datos
+	
+	$nombre = $_POST['datos_registrar_nombre'];
+	$email = $_POST['datos_registrar_email'];
+	$password= password_hash($_POST['datos_registrar_password'],PASSWORD_DEFAULT);
 
- 
-$nombre = $_POST['datos_registrar_nombre'];
-$email = $_POST['datos_registrar_email'];
-$password= password_hash($_POST['datos_registrar_contraseña'],PASSWORD_DEFAULT);
+	$sql = "INSERT INTO ohana.usuarios ( nombre, email, pass) VALUES ( '$nombre', '$email', '$password');";
 
-$insertar = "INSERT INTO usuarios (nombre, email, password) VALUES ('$nombre', '$email', '$password')";
+	$resultado = mysqli_query($conexion, $sql);
 
-$resultado = mysqli_query($conexion, $insertar);
-
-if($resultado) {
-	echo "<script>alert('Se ha registrado el usuario con éxito :)');
-	window.location='/hotel/principal.php'</script>";
-} else {
-	header ('location: ./');
+	if($resultado) {
+		echo "<script>alert('Se ha registrado el usuario con éxito :)');
+		window.location='/principal.php'</script>";
+	} else {
+		header ('location: ./');
+	}
 }
-
-
 ?>
