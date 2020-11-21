@@ -15,12 +15,12 @@ if(isset($_POST['datos_introducidos_email']) && isset($_POST['datos_introducidos
         $r = mysqli_fetch_array($r, MYSQLI_ASSOC);
         session_start();
         $_SESSION['name']=$r['nombre'];
-        header ('location: home.php');
+        header ('location: ../home.php');
     } else {
-        header("Location: principal.php");
+        header("Location: ../principal.php");
     }
 } else {
-    header("Location: principal.php");
+    header("Location: ../principal.php");
 }
 
 ?>

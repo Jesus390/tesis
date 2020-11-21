@@ -1,5 +1,5 @@
 <?php
-include 'conexion.php';
+//include 'conexion.php';
 session_start();
 //si hay una sesión
 if (isset($_SESSION['name'])){
@@ -64,8 +64,8 @@ if (isset($_SESSION['name'])){
                             <li class="dropdown ml-3 book btn btn-light btn-style">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h6>¡Bienvenido <?php print $_SESSION['name'];?>!</h6> <span class="caret"></span></a>
                                 <ul class="dropdown-menu ml-3 book btn btn-style">
-                                    <li><a href="mis_reservas.php">Mis Reservas</a></li>
-                                    <li><a href="cerrar_sesion.php">Salir</a></li>
+                                    <li><a href="scripts/mis_reservas.php">Mis Reservas</a></li>
+                                    <li><a href="scripts/cerrar_sesion.php">Salir</a></li>
                                 </ul>
                             </li>     
                     </div>    

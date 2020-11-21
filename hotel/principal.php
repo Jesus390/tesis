@@ -1,5 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['name'])) {
+    header("Location: home.php");
+}
 
-
+?>
 <html lang="en">
   <head>
         <!-- Required meta tags -->
@@ -93,7 +98,7 @@
                     <div class="wrapper">
                         <div class="form-inner-cont2">
                             <h3>Inicia Sesión</h3>
-                            <form action="archivo_destino.php" method="POST" class="signin-form">
+                            <form action="scripts/archivo_destino.php" method="POST" class="signin-form">
                                 <div class="form-input2">
                                     <span class="fa fa-envelope-o" aria-hidden="true"></span> 
                                     <input id="control1_email" type="email" name="datos_introducidos_email"
