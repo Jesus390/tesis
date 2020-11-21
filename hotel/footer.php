@@ -18,7 +18,7 @@
 
                   <ul>
                     <h6 class="footer-title-29">Links</h6>
-                    <li><a href="principal.php">Principal</a></li>
+                    <li><a href="/">Principal</a></li>
                     <li><a href="about.php">Sobre Nosotros</a></li>
                     <li><a href="services.php">Servicios</a></li>
                     <li><a href="contact.php">Contáctanos</a></li>

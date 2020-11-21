@@ -31,7 +31,7 @@
         	<!--/nav-->
         	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
         		<div class="container">
-        			<a class="navbar-brand" href="principal.php">
+        			<a class="navbar-brand" href="/">
         				<img src="assets/images/hotel.png" alt="Your logo"/>
         			</a>
         			<button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -43,7 +43,7 @@
         			<div class="collapse navbar-collapse" id="navbarSupportedContent">
         				<ul class="navbar-nav ml-auto">
         					<li class="nav-item _active">
-        						<a class="nav-link" href="principal.php">Principal</a>
+        						<a class="nav-link" href="/">Principal</a>
         					</li>
         					<li class="nav-item @@about__active">
         						<a class="nav-link" href="about.php">Acerca de Nosotros</a>

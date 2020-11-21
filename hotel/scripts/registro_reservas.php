@@ -17,6 +17,6 @@ if($resultado) {
     echo "<script>alert('Haz reservado correctamente esta habitación! :)');
     window.location='/hotel/mostrar_reservas.php'</script>";
 } else {
-    header ('location: ./');
+    header ('location: /');
 }
 ?>

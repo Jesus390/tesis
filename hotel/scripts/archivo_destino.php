@@ -18,10 +18,10 @@ if(isset($_POST['datos_introducidos_email']) && isset($_POST['datos_introducidos
         $_SESSION['uk'] = "$".$r['id']."$".$r['pass'];
         header ('location: ../home.php');
     } else {
-        header("Location: ../principal.php");
+        header("Location: /");
     }
 } else {
-    header("Location: ../principal.php");
+    header("Location: /");
 }
 
 ?>

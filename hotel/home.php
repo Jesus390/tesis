@@ -284,7 +284,7 @@ if (isset($_SESSION['name'])){
 }//si no hay sesión
 else{
     //se redirecciona
-    header ('location: ./principal.php');
+    header ('location: /');
 }
 ?>
 

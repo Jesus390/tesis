@@ -7,7 +7,7 @@
         <div class="container py-lg-3">
 
             <h2>Sobre Nosotros</h2>
-            <p><a href="principal.php">Principal</a> &nbsp; / &nbsp; Sobre Nosotros</p>
+            <p><a href="/">Principal</a> &nbsp; / &nbsp; Sobre Nosotros</p>
 
         </div>
     </div>

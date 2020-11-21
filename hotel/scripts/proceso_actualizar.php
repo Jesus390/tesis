@@ -22,7 +22,7 @@ if(isset($_POST)) {
 		echo "<script>alert('Se han actualizado los cambios con éxito :)');
 		window.location='/hotel/mostrar_reservas.php'</script>";
 	} else {
-		header ('location: ./');
+		header ('location: /');
 	}
 
 }

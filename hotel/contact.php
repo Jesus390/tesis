@@ -1,12 +1,11 @@
 <?php session_start();?>
-
 <?php include_once 'header.php';?>
 
 <section class="w3l-breadcrumb">
     <div class="breadcrum-bg py-sm-5 py-4">
         <div class="container py-lg-3">
             <h2>Contáctanos</h2>
-            <p><a href="principal.php">Principal</a> &nbsp; / &nbsp; Contacto</p>
+            <p><a href="/">Principal</a> &nbsp; / &nbsp; Contacto</p>
 
         </div>
     </div>

@@ -146,7 +146,7 @@ $registros = "SELECT * FROM reservas order by cod_huesp asc";
 }//si no hay sesión
 else{
     //se redirecciona
-    header ('location: ../principal.php');
+    header ('location: /');
 }
 ?>
 

@@ -14,9 +14,9 @@ if(isset($_POST)) {
 
 	if($resultado) {
 		echo "<script>alert('Se ha registrado el usuario con éxito :)');
-		window.location='/principal.php'</script>";
+		window.location='/'</script>";
 	} else {
-		header ('location: ./');
+		header ('location: /');
 	}
 }
 ?>

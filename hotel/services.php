@@ -7,7 +7,7 @@
         <div class="container py-lg-3">
 
             <h2>Nuestros Servicios</h2>
-            <p><a href="principal.php">Principal</a> &nbsp; / &nbsp; Servicios</p>
+            <p><a href="/">Principal</a> &nbsp; / &nbsp; Servicios</p>
 
         </div>
     </div>

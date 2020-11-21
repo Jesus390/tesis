@@ -42,7 +42,7 @@ $registros = "SELECT * FROM habitaciones";
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="home.php">Principal</a>
+                                <a class="nav-link" href="/">Principal</a>
                             </li>
                             <li class="nav-item @@about__active">
                                 <a class="nav-link" href="about.html">Sobre Nosotros</a>
@@ -71,7 +71,7 @@ $registros = "SELECT * FROM habitaciones";
     <div class="breadcrum-bg py-sm-5 py-4">
         <div class="container py-lg-3">
             <h2>Reservas</h2>
-            <p><a href="home.php">Principal</a> &nbsp; / &nbsp; Reservas</p>
+            <p><a href="/">Principal</a> &nbsp; / &nbsp; Reservas</p>
         </div>
     </div>
 </section>
@@ -335,7 +335,7 @@ $(function () {
 }//si no hay sesión
 else{
     //se redirecciona
-    header ('location: ./principal.php');
+    header ('location: /');
 }
 ?>
 

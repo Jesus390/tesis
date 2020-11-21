@@ -18,7 +18,7 @@ if($resultado) {
     echo "<script>alert('Se ha eliminado la reserva.');
     window.location='/hotel/mostrar_reservas.php'</script>";
 } else {
-    header ('location: ./');
+    header ('location: /');
 }
 
 
