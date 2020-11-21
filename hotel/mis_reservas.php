@@ -87,7 +87,7 @@ $registros = "SELECT * FROM reservas order by cod_huesp asc";
                 <div class="form-right">
                     <div class="form-inner-cont">
                         <h3 class="title-small">Comprobar Disponibilidad</h3>
-                        <form action="proceso_actualizar.php?id=<?php echo $row['cod_huesp'];?>" method="post" class="signin-form">
+                        <form action="proceso_actualizar.php?id=<?php echo $_SESSION['uk'];?>" method="post" class="signin-form">
                             <div class="row book-form">
                                 <div class="form-input col-md-6 col-sm-8 mt-3">
                                     <label>Fecha de Ingreso</label>
@@ -139,14 +139,6 @@ $registros = "SELECT * FROM reservas order by cod_huesp asc";
     </div>
 </section>
 </div>
-
-<!-- 
-    <div class="modal fade" id="modalLRForm" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog cascading-modal" role="document">
-    <div class="modal-content">
-    <div class="modal-c-tabs">
--->
-
 
 <?php include_once 'footer.php';?>
 
