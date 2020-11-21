@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <html lang="en">
   <head>
         <!-- Required meta tags -->
@@ -21,6 +17,9 @@
 
         <!-- Template CSS -->
         <link rel="stylesheet" href="assets/css/style-starter.css">
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   </head>
 
     <body>
