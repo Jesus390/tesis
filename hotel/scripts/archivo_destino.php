@@ -15,6 +15,7 @@ if(isset($_POST['datos_introducidos_email']) && isset($_POST['datos_introducidos
         $r = mysqli_fetch_array($r, MYSQLI_ASSOC);
         session_start();
         $_SESSION['name']=$r['nombre'];
+        $_SESSION['uk'] = "$".$r['id']."$".$r['pass'];
         header ('location: ../home.php');
     } else {
         header("Location: ../principal.php");
