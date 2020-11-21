@@ -12,8 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- //Meta tags -->
-        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /><!-- Style-CSS -->
-        <link href="css/font-awesome.css" rel="stylesheet"><!-- font-awesome-icons -->
+        <link rel="stylesheet" href="assets/css/style-starter.css" type="text/css" media="all" /><!-- Style-CSS -->
+        <link href="assets/css/font-awesome.css" rel="stylesheet"><!-- font-awesome-icons -->
 
         <title>Hotel Ohana</title>
 
