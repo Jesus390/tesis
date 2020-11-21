@@ -213,7 +213,7 @@
 
     <?php } else { ?>
 
-        				<a href="#booking" class="ml-3 book btn btn-primary btn-style">Reserva Ya</a>
+        				<a href="mis_reservas.php#booking" class="ml-3 book btn btn-primary btn-style">Reserva Ya</a>
 
                             <li class="dropdown ml-3 book btn btn-light btn-style">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h6>¡Bienvenido <?php print $_SESSION['name'];?>!</h6> <span class="caret"></span></a>
