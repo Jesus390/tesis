@@ -1,5 +1,5 @@
 <?php
-include 'conexion.php';
+include 'scripts/conexion.php';
 session_start();
 //si hay una sesión
 if (isset($_SESSION['name'])){
@@ -59,8 +59,8 @@ $registros = "SELECT * FROM registro order by cod_huesp asc";
                             <li class="dropdown ml-3 book btn btn-light btn-style">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h6>¡Bienvenido <?php print $_SESSION['name'];?>!</h6> <span class="caret"></span></a>
                                 <ul class="dropdown-menu ml-3 book btn btn-style">
-                                    <li><a href="mostrar_resultados.php">Mis Reservas</a></li>
-                                    <li><a href="cerrar_sesion.php">Salir</a></li>
+                                    <li><a href="mis_reservas.php">Mis Reservas</a></li>
+                                    <li><a href="scripts/cerrar_sesion.php">Salir</a></li>
                                 </ul>
                             </li>  
                     </div>  
@@ -93,8 +93,11 @@ $registros = "SELECT * FROM registro order by cod_huesp asc";
           <th scope="row" class="text-center">Acciones</th>
         </tr>
         </thead>
-        <?php $resultado = mysqli_query($conexion, $registros);
-        while ($row=mysqli_fetch_assoc($resultado)) {  ?>
+        <?php
+          $resultado = mysqli_query($conexion, $registros);  
+          while ($row=mysqli_fetch_assoc($resultado)) {
+        ?>
+        
         <tbody>
         <tr>
           <div class="modal fade" id="modalLRForm" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -167,7 +170,7 @@ $registros = "SELECT * FROM registro order by cod_huesp asc";
           <td class="text-center"><?php echo $row['fech_ingreso'] ?></td>
           <td class="text-center"><?php echo $row['fech_salida'] ?></td>
           <td class="text-center"><?php echo $row['cant_adultos'] ?></td>
-          <td class="text-center"><?php echo $row['cant_niños'] ?></td>
+          <td class="text-center"><?php echo $row['cant_ninhos'] ?></td>
           <td class="text-center"><?php echo $row['tipo_hab'] ?></td>
           <td>
 
@@ -431,7 +434,7 @@ $(function () {
 }//si no hay sesión
 else{
     //se redirecciona
-    header ('location: ./principal.php');
+    header ('location: ../principal.php');
 }
 ?>
 
