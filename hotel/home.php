@@ -5,7 +5,6 @@ session_start();
 if (isset($_SESSION['name'])){
 //se muestra el contenido de la página web
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

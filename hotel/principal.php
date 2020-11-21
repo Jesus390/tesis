@@ -132,7 +132,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <p class="signup">No tienes una cuenta? <a href="#signup.html" class="signuplink">Regístrate</a></p>
+                            <p class="signup">No tienes una cuenta? <a href="#panel8" class="signuplink">Regístrate</a></p>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                         <div class="wrapper">
                             <div class="form-inner-cont2">
                                 <h3>Regístrate</h3>
-                                <form action="archivo_registrar.php" method="post" class="signin-form">
+                                <form action="scripts/archivo_registrar.php" method="post" class="signin-form">
                                     <div class="form-input2">
                                     <span class="fa fa-envelope-o" aria-hidden="true"></span> 
                                     <input id="control2_nombre" type="text" name="datos_registrar_nombre"
@@ -163,7 +163,7 @@
                                     </div>
                                     <div class="form-input2">
                                         <span class="fa fa-key" aria-hidden="true"></span> 
-                                        <input type="password" name="datos_registrar_contraseña" id="control2_contraseña" placeholder="Contraseña"
+                                        <input type="password" name="datos_registrar_password" id="control2_contraseña" placeholder="Contraseña"
                                             required />
                                     </div>
                                     <div class="login-remember d-grid">
